@@ -184,7 +184,7 @@ img.rightLeg
 {
     font-size: 15px;
     font-weight: 300px;
-    display: flex;
+    display: none;
     color: red;
     margin: 20px 0px 0px 10px;
     position: absolute;
