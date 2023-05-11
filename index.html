@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hanged Man</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="shortcut icon" href="./Images/hangedIcon1.png">
+        <script src="./script.js"></script>
+    </head>
+    <body>
+        <div class="background">
+            <img src="./Images/blankPaperBg.jpg" alt="paper desk background">
+        </div>
+        <header>
+            <div class="titleItem">
+                <div class="menuBox title">
+                    Hanged Man
+                </div>
+                <div class="cutCorner"></div>
+            </div>
+            <div class="menuItem" id="button1">
+                <div class="menuBox">
+                    Random
+                </div>
+                <div class="cutCorner"></div>
+            </div>
+            <div class="menuItem" id="button2">
+                <div class="menuBox">
+                    Things
+                </div>
+                <div class="cutCorner"></div>
+            </div>
+            <div class="menuItem" id="button3">
+                <div class="menuBox">
+                    Places
+                </div>
+                <div class="cutCorner"></div>
+            </div>
+            <div class="menuItem" id="button4">
+                <div class="menuBox">
+                    Animals
+                </div>
+                <div class="cutCorner"></div>
+            </div>
+            <div class="menuItem" id="button5">
+                <div class="menuBox">
+                    Custom
+                </div>
+                <div class="cutCorner"></div>
+            </div>
+            <div></div>
+        </header>
+        <input type="text" class="wordInput" id="wordInput"/>
+        <div class="errorTxt" id="errorTxt">
+            * Only use regular letters.
+        </div>
+        <main>
+            <div class="paperHanged">
+                <img src="./Images/DrawnHanger.png" alt="hanger" class="hangerImg">
+                <img src="./Images/DrawHangHead.png" alt="head" class="head hangImg" id="hang1">
+                <img src="./Images/DrawHangBody.png" alt="body" class="body hangImg" id="hang2">
+                <img src="./Images/DrawnHangLeftArm.png" alt="left arm" class="leftArm hangImg" id="hang3">
+                <img src="./Images/DrawnHangRightArm.png" alt="right arm" class="rightArm hangImg" id="hang4">
+                <img src="./Images/DrawnHangLeftLeg.png" alt="left leg" class="leftLeg hangImg" id="hang5">
+                <img src="./Images/DrawnHangRightLeg.png" alt="right leg" class="rightLeg hangImg" id="hang6">
+                <div class="winStatusBox">
+                    <div class="winStatus hide" id="winBox">
+                        You<br>Win!
+                    </div>
+                    <div class="winStatus hide" id="loseBox">
+                        You<br>Lose!
+                        <div class="theWord" id="theWord">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="chosenCategory" id="chosenCategory"></div>
+                <div id="letters">
+                </div>
+                <div class="lettersField" id="lettersField">
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,268 @@
+body
+{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Lucida Console';
+    display: flex;
+    justify-content: start;
+    color: #222222;
+    height: 90vh;
+}
+.background
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.background img
+{
+    left: 350px;
+    position: fixed;
+    transform: scale(1.8);
+    z-index: -1;
+    width: auto;
+    height: 100%;
+}
+header
+{
+    width: 400px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 90px 0px;
+}
+main
+{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+
+}
+.titleItem
+{
+    display: flex;
+}
+.menuItem
+{
+    margin-left: -10px;
+    display: flex;
+    z-index: 1;
+    transition: transform 300ms ease-out;
+    cursor: pointer;
+}
+.menuItem:hover
+{
+    transform: translate(10px, 0px);
+}
+.menuBox
+{
+    width: 230px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 30px;
+    background-color: #fff;
+    font-size: 25px;
+}
+.cutCorner
+{
+    display: inline-flex;
+    -webkit-clip-path: polygon(0 0, 100% 0, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+}
+div.title
+{
+    width: 320px;
+    font-size: 30px;
+}
+.paperHanged
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 990px;
+    height: 920px;
+    margin: 10px 0px 0px 765px;
+}
+img.hangImg
+{
+    position: absolute;
+    width: 100px;
+    object-fit: cover;
+}
+img.hangerImg
+{
+    position: absolute;
+    width: 400px;
+    object-fit: cover;
+    margin-left: 90px;
+}
+img.head
+{
+    height: 100px;
+    left: 301px;
+    top: 107px;
+}
+img.body
+{
+    height: 200px;
+    left: 300px;
+    top: 200px;
+}
+img.leftArm
+{
+    height: 150px;
+    left: 250px;
+    top: 200px;
+}
+img.rightArm
+{
+    height: 150px;
+    left: 353px;
+    top: 200px;
+}
+img.leftLeg
+{
+    height: 150px;
+    left: 250px;
+    top: 380px;
+}
+img.rightLeg
+{
+    height: 150px;
+    left: 353px;
+    top: 380px;
+}
+#letters
+{
+    margin: 730px 0px 0px 50px;
+    display: flex;
+}
+.letterBox
+{
+    display: flex;
+    margin-right: 7px;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 600;
+    width: 30px;
+    height: 30px;
+    border-bottom: 3px solid #3d3d3d;
+}
+.blankLetterBox
+{
+    border-bottom: 3px solid #3d3d3d00;
+}
+.input
+{
+    display: none;
+    margin: 20px 10px 0px 50px;
+    flex-direction: column;
+}
+.wordInput
+{
+    margin: 840px 0px 0px 10px;
+    width: 200px;
+    height: 20px;
+    position: absolute;
+    border: 2px solid #3d3d3d;
+}
+.wordInput:focus
+{
+    outline:none;
+}
+.errorTxt
+{
+    font-size: 15px;
+    font-weight: 300px;
+    display: flex;
+    color: red;
+    margin: 20px 0px 0px 10px;
+    position: absolute;
+    top: 856px;
+    height: 30px;
+    padding: 0px 5px;
+    align-items: center;
+    box-sizing: border-box;
+    border: 2px solid #3d3d3d;
+    background-color: #FFFFFF;
+}
+div.winStatusBox
+{
+    position: absolute;
+    left: 560px;
+    top: 70px;
+    z-index: 1;
+    font-size: 100px;
+}
+div.winStatus
+{
+    position: absolute;
+}
+.theWord
+{
+    font-size: 20px;
+}
+.chosenCategory
+{
+    position: absolute;
+    margin: 700px 0px 0px 49px;
+    font-size: 20px;
+}
+.lettersField
+{
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px 13px 0px 13px;
+}
+.inputLetter
+{
+    width: 50px;
+    height: 50px;
+    margin: 10px 11px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 2px solid #3d3d3d;
+    background-color: #FFFFFF00;
+    cursor: pointer;
+}
+.inputLetter:active
+{
+    position: relative;
+	top: 1px;
+}
+.flex
+{
+    display: flex;
+}
+.show
+{
+    display: block;
+}
+.hide
+{
+    display: none;
+}
+.greyed
+{
+    cursor: default;
+    background-color: #a7a7a7;
+}
+.greyed:active
+{
+    position: relative;
+	top: 0px;
+}

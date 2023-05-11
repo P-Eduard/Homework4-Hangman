@@ -1,0 +1,11 @@
+alphabet buttons ✓
+
+scoring
+
+function separation ✓
+
+local storage
+
+external web api to get random words 
+
+button to save hi score in a database from firebase
